@@ -1,29 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Tutor</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Exemple de formulaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>AI Tutor: Ask me anything!</h1>
-    <p>I'm here to help with your studies. Ask a question and I'll do my best to assist you!</p>
-  </header>
+    <h1>Exercice 2 : Exemple de formulaire</h1>
+    <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom"required><br><br>
 
-  <main>
-    <div class="chat-container">
-      <textarea id="question-input" placeholder="Type your question here..." rows="4"></textarea>
-      <button id="ask-btn">Ask AI</button>
-      <div id="output"></div>
-    </div>
-  </main>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email"required><br><br>
 
-  <footer>
-    <p>© 2024 AI Tutor. All rights reserved.</p>
-  </footer>
+        <label>Genre :</label>
+        <input type="radio" id="homme" name="genre" value="homme"required>
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme"required>
+        <label for="femme">Femme</label><br><br>
 
-  <script src="scripts.js"></script>
+        <label for="ville">Ville :</label>
+        <select id="ville" name="ville"required>
+            <option value="mostaganem">Mostaganem</option>
+            <option value="oran">Oran</option>
+            <option value="alger">Alger</option>
+        </select><br><br>
+
+        <label>Préférences :</label><br>
+        <input type="checkbox" id="musique" name="preferences" value="musique">
+        <label for="musique">Musique</label><br>
+        <input type="checkbox" id="sport" name="preferences" value="sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" id="lecture" name="preferences" value="lecture">
+        <label for="lecture">Lecture</label><br><br>
+
+        <label for="commentaires">Commentaires :</label><br>
+        <textarea id="commentaires" name="commentaires" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Envoyer</button>
+        <button type="reset">Nouveau</button>
+    </form>
 </body>
 </html>
